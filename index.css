@@ -3,71 +3,88 @@
 }
 
 .main {
-    background-color: dimgray;
-    width: 100vw;
-    height: 100vh;
+    font-family: 'Space Mono', monospace;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #56cfff;
 }
 
-.wrapper {
-    width: 400px;
-    height: 400px;
-    background-color: white;
-    box-shadow: 0 10px 10px #00000059;
-    border-radius: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.cartao {
     display: flex;
     flex-direction: column;
+
+
+    width: 100%;
+    max-width: 600px;
+    height: 800px;
+
+    margin-right: 32px;
+    margin-left: 32px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
 }
 
-.wrapper:first-of-type {
-    margin-bottom: 28px;
+.linguagem {
+    width: 100%;
+
+    border: 1px solid #56cfff;
+    border-radius: 7px;
+
+    padding: 10px;
+
+    margin-bottom: 32px;
+
+    font-family: inherit;
+    color: inherit;
 }
 
 .botao {
     align-self: flex-end;
-}
 
-input {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
+    background-color: #56cfff;
+
     border: none;
-    background-color: inherit;
-}
+    border-radius: 7px;
 
-textarea {
-    color: inherit;
+    min-width: 120px;
+
+    padding: 10px 20px;
+
     font-family: inherit;
-    font-size: inherit;
-    border: none;
-    background-color: inherit;
-}
+    color: inherit;
 
-.linguagem {
-    border: 1px solid;
-    width: 100%;
-    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-.code-area {
+.codigo-wrapper {
     height: 100%;
-    cursor: text;
-    border-radius: 10px;
-    overflow: hidden;
+
+    margin-bottom: 32px;
 }
 
 .preview {
     display: block;
-    padding: 5px;
-    width: 100%;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
     height: 100%;
-    box-sizing: border-box;
-    white-space: pre;
 }

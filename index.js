@@ -1,18 +1,18 @@
-const codeArea = document.querySelector('.code-area')
-const language = document.querySelector('.code-language')
+const areaDoCodigo = document.querySelector('.codigo-wrapper')
+const linguagem = document.querySelector('.linguagem')
 const botao = document.querySelector('.botao')
 
 botao.addEventListener('click', () => {
-    let codigo = codeArea.querySelector('code')
+    let codigo = areaDoCodigo.querySelector('code')
     hljs.highlightBlock(codigo)
 })
 
-language.addEventListener('change', () => {
+linguagem.addEventListener('change', () => {
     mudaLinguagem()
 })
 
 function mudaLinguagem() {
-    let codigo = codeArea.querySelector('code')
-    codeArea.innerHTML = `<code class="preview hljs ${language.value}" contenteditable="true"></code>`
-    codeArea.firstChild.innerText = codigo.innerText
+    let codigo = areaDoCodigo.querySelector('code')
+    areaDoCodigo.innerHTML = `<code class="preview hljs ${linguagem.value}" contenteditable="true" aria-label="editor"></code>`
+    areaDoCodigo.firstChild.innerText = codigo.innerText
 }

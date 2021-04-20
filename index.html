@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-      href="dracula.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dracula.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body spellcheck="false">
     <main class="main">
-        <section class="wrapper">
-            <select name="linguagem" id="" class="code-language">
+        <section class="cartao">
+            <label for="linguagem" class="label">Escolha a linguagem</label>
+            <select name="linguagem" id="linguagem" class="linguagem">
                 <option value="javascript">JavaScript</option>
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
             </select>
-            <div class="code-area">
-                <code class="preview hljs" contenteditable="true"></code>
+            <div class="codigo-wrapper">
+                <code class="preview hljs" contenteditable="true" aria-label="editor"></code>
             </div>
             <button class="botao">preview</button>
         </section>
